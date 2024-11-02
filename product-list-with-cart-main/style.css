@@ -1,0 +1,95 @@
+.container {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+}
+
+header h1 {
+  font-size: 24px;
+  color: #3e2723;
+}
+
+.carts {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  width: 70%;
+}
+
+.cart {
+  background: #fff;
+  padding: 10px;
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.cart img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.cart h3 {
+  font-size: 18px;
+  color: #3e2723;
+}
+
+.cart p {
+  font-size: 16px;
+  color: #6d4c41;
+}
+.side {
+  position: absolute;
+  top: 60px;
+  left: 68rem;
+}
+
+.side button {
+  padding: 10px;
+  background-color: #d84315;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+.side {
+  width: 20%;
+  padding: 20px;
+  background: #f5f5f5;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.side h2 {
+  font-size: 20px;
+  color: #3e2723;
+}
+.side p {
+  display: flex;
+  justify-content: space-between;
+  font-size: 20px;
+  color: #3e2723;
+}
+
+.item {
+  display: block;
+  justify-content: space-between;
+  padding: 5px 0;
+}
+
+.item p {
+  margin: 0;
+}
+.num {
+  color: red;
+  padding-right: 20px;
+}
+button {
+  padding: 10px;
+  background-color: #d84315;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  width: 100%;
+}
