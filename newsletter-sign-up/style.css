@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+  /* justify-content: center;
+  align-items: center; */
+}
+.log-in {
+  position: relative;
+  top: 100px;
+  left: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+  height: 50%;
+  background-color: blanchedalmond;
+  border-radius: 10px;
+}
+.text {
+  padding: 50px;
+}
+.text h1 {
+  font-size: 50px;
+  font-weight: bold;
+}
+.text h1,
+p,
+span {
+  margin-bottom: 30px;
+}
+.item span {
+  display: inline;
+  justify-content: start;
+}
+.text .box {
+  margin-top: 40px;
+}
+.box span,
+input,
+button {
+  margin-top: 10px;
+}
+.box input,
+button {
+  padding: 5px;
+}
+
+.image {
+  padding: 30px;
+}
