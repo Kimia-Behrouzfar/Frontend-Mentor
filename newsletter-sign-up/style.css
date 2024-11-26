@@ -50,23 +50,41 @@ button {
 }
 .msg {
   position: relative;
-  top: 100px;
-  left: 300px;
-  display: block;
+  top: 200px;
+  left: 550px;
+  display: flex;
   justify-content: center;
   align-items: center;
   width: 25%;
   height: 25%;
-  background-color: blanchedalmond;
   border-radius: 10px;
   background-color: yellowgreen;
 }
 .cart {
-  padding: 40px;
-  /* margin-bottom: 15px; */
+  padding: 50px;
 }
-.cart svg,
-h2,
-p {
-  margin-bottom: 15px;
+.cart h2 {
+  color: rgb(22, 22, 139);
+  margin-top: 20px;
+  font-size: 30px;
+  font-weight: bold;
+}
+.cart p {
+  margin-top: 20px;
+  font-size: 16px;
+}
+.cart .email {
+  font-weight: bold;
+}
+.cart svg {
+  width: 50px;
+  height: 50px;
+}
+.cart button {
+  width: 100%;
+  padding: 15px;
+  border-radius: 5px;
+  border: none;
+  background: rgb(22, 22, 139);
+  color: white;
 }
