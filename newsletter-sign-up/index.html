@@ -31,28 +31,6 @@
     </style>
   </head>
   <body>
-    <!-- <svg
-      xmlns="http://www.w3.org/2000/svg"
-      width="64"
-      height="64"
-      viewBox="0 0 64 64"
-    >
-      <defs>
-        <linearGradient id="a" x1="100%" x2="0%" y1="0%" y2="100%">
-          <stop offset="0%" stop-color="#FF6A3A" />
-          <stop offset="100%" stop-color="#FF527B" />
-        </linearGradient>
-      </defs>
-      <g fill="none">
-        <circle cx="32" cy="32" r="32" fill="url(#a)" />
-        <path
-          stroke="#FFF"
-          stroke-width="4"
-          d="m18.286 34.686 8.334 7.98 19.094-18.285"
-        />
-      </g>
-    </svg> -->
-    <!-- ////////////big icon///////////// -->
     <!-- Sign-up form start -->
 
     <main class="log-in">
@@ -83,7 +61,7 @@
           >
           <br />
 
-          <span>
+          <span class="one">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="21"
@@ -103,7 +81,7 @@
           >
 
           <br />
-          <span>
+          <span class="one">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="21"
@@ -125,10 +103,11 @@
         <div class="box">
           <span>Email address</span>
           <br />
-          <input type="text" placeholder="email@company.com" />
+          <input type="text" placeholder="email@company.com" class="email" />
           <br />
           <button class="Subscribe">Subscribe to monthly newsletter</button>
         </div>
+        <p class="error"></p>
       </section>
 
       <section class="image">
@@ -137,16 +116,41 @@
     </main>
 
     <!-- Sign-up form end -->
-
     <!-- Success message start -->
 
-    <div class="msg">
-      <h2>Thanks for subscribing!</h2>
-      <p>
-        A confirmation email has been sent to ash@loremcompany.com. Please open
-        it and click the button inside to confirm your subscription.
-      </p>
-      <button>Dismiss message</button>
+    <div id="msg">
+      <div id="cart">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="64"
+          height="64"
+          viewBox="0 0 64 64"
+        >
+          <defs>
+            <linearGradient id="a" x1="100%" x2="0%" y1="0%" y2="100%">
+              <stop offset="0%" stop-color="#FF6A3A" />
+              <stop offset="100%" stop-color="#FF527B" />
+            </linearGradient>
+          </defs>
+          <g fill="none">
+            <circle cx="32" cy="32" r="32" fill="url(#a)" />
+            <path
+              stroke="#FFF"
+              stroke-width="4"
+              d="m18.286 34.686 8.334 7.98 19.094-18.285"
+            />
+          </g>
+        </svg>
+        <h2>Thanks for subscribing!</h2>
+        <p>
+          A confirmation email has been sent to
+
+          <span class="email">ash@loremcompany.com.</span>
+          Please open it and click the button inside to confirm your
+          subscription.
+        </p>
+        <button>Dismiss message</button>
+      </div>
     </div>
 
     <!-- Success message end -->
@@ -155,7 +159,7 @@
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
         >Frontend Mentor</a
-      >. Coded by <a href="#">Your Name Here</a>.
+      >. Coded by <a href="#">MIA</a>.
     </div>
     <script src="./script.js"></script>
   </body>

@@ -40,9 +40,13 @@ input,
 button {
   margin-top: 10px;
 }
+
 .box input,
 button {
-  padding: 5px;
+  width: 100%;
+  border: none;
+  padding: 15px;
+  border-radius: 5px;
 }
 
 .image {
