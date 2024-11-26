@@ -1,10 +1,8 @@
 * {
   margin: 0;
   padding: 0;
-  /* justify-content: center;
-  align-items: center; */
 }
-.log-in {
+#log-in {
   position: relative;
   top: 100px;
   left: 300px;
@@ -52,39 +50,40 @@ button {
 .image {
   padding: 30px;
 }
-.msg {
+
+#msg {
   position: relative;
   top: 200px;
   left: 550px;
-  display: flex;
+  display: none;
   justify-content: center;
   align-items: center;
   width: 25%;
   height: 25%;
   border-radius: 10px;
-  background-color: yellowgreen;
+  background-color: rgb(255, 245, 233);
 }
-.cart {
+#cart {
   padding: 50px;
 }
-.cart h2 {
+#cart h2 {
   color: rgb(22, 22, 139);
   margin-top: 20px;
   font-size: 30px;
   font-weight: bold;
 }
-.cart p {
+#cart p {
   margin-top: 20px;
   font-size: 16px;
 }
-.cart .email {
+#cart .email {
   font-weight: bold;
 }
-.cart svg {
+#cart svg {
   width: 50px;
   height: 50px;
 }
-.cart button {
+#cart button {
   width: 100%;
   padding: 15px;
   border-radius: 5px;
