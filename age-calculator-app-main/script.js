@@ -1,15 +1,11 @@
 const showAge = document
   .querySelector(".icon")
   .addEventListener("click", () => {
-    const day = document.querySelector(".days").value;
-    const month = document.querySelector(".months").value;
-    const year = document.querySelector(".years").value;
+    const days = document.getElementById("day").value;
+    const months = document.getElementById("month").value;
+    const years = document.getElementById("year").value;
     const result = document.querySelector(".result");
-    result.textContent = `Day: ${day}, Month: ${month}, Year: ${year}`;
+    result.textContent = `Day: ${days}, Month: ${months}, Year: ${years}`;
 
-    console.log(result);
-    console.log(`Day: ${day}, Month: ${month}, Year: ${year}`);
-
-    // document.getElementById("text").textContent = text;
+    console.log(`Day: ${days}, Month: ${months}, Year: ${years}`);
   });
-// console.log(showAge);
