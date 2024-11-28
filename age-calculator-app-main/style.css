@@ -2,14 +2,14 @@
   margin: 0;
   padding: 0;
 }
-.top {
+#top {
   display: flex;
   padding: 40px;
 }
-.top p {
+#top p {
   font-size: 15px;
 }
-.top input {
+#top input {
   width: 60px;
   height: 20px;
   padding: 10px;
@@ -29,4 +29,10 @@ svg {
   padding: 10px;
   background-color: rgb(124, 23, 186);
   color: white;
+}
+.down {
+  font-size: 40px;
+  font-weight: bold;
+  padding: 40px;
+  color: rgb(124, 23, 186);
 }
