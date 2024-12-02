@@ -40,3 +40,6 @@
   display: flex;
   justify-content: space-between;
 }
+.item:hover {
+  color: #ad28eb;
+}
