@@ -5,6 +5,7 @@
 #top {
   display: flex;
   padding: 40px;
+  margin-left: 120px;
 }
 #top p {
   font-size: 15px;
@@ -34,5 +35,5 @@ svg {
   font-size: 40px;
   font-weight: bold;
   padding: 40px;
-  color: rgb(124, 23, 186);
+  margin-left: 80px;
 }

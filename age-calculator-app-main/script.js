@@ -31,7 +31,8 @@ const showAge = document
 
     // Display the result
     const result = document.querySelector(".result");
-    result.textContent = `Age: ${ageInYears} years, ${ageInMonths} months, ${ageInDays} days`;
+
+    result.textContent = `${ageInYears} years, ${ageInMonths} months, ${ageInDays} days`;
 
     console.log(
       `Age: ${ageInYears} years, ${ageInMonths} months, ${ageInDays} days`
