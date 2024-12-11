@@ -1,0 +1,94 @@
+/* i'm done i can't continue any more!! */
+* {
+  margin: 0;
+  padding: 0;
+}
+header {
+  padding: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+ul {
+  list-style: none;
+  display: flex;
+  gap: 60px;
+}
+main {
+  display: flex;
+}
+.image img {
+  width: 80%;
+  margin-left: 80px;
+}
+section .text {
+  display: flex;
+  margin-left: 80px;
+  margin-top: 20px;
+}
+.text h2 {
+  font-size: 50px;
+  font-weight: bold;
+}
+.text p {
+  font-size: 20px;
+  color: hsl(233, 8%, 79%);
+}
+.text button {
+  margin-top: 30px;
+  width: 40%;
+  color: #000;
+  background-color: hsl(5, 85%, 63%);
+  padding: 10px;
+  border: none;
+  border-radius: 2px;
+  font-weight: bold;
+}
+.paraph {
+  margin-left: 35%;
+}
+aside {
+  position: relative;
+  right: 150px;
+  padding: 40px;
+  background-color: hsl(240, 100%, 5%);
+  color: #fff;
+}
+.article h1 {
+  color: hsl(35, 77%, 62%);
+}
+.article section {
+  margin-top: 10px;
+  padding: 20px;
+}
+section h3 {
+  /* margin-top: 10px; */
+  font-weight: bold;
+}
+section p {
+  margin-top: 10px;
+}
+.articles {
+  margin-top: 200px;
+  display: flex;
+  gap: 160px;
+}
+article {
+  display: flex;
+  gap: 20px;
+}
+article img {
+  width: 90px;
+  height: 90px;
+}
+article h1 {
+  font-size: 40px;
+  color: hsl(5, 85%, 63%);
+}
+article h3 {
+  font-size: 20px;
+  font-weight: bold;
+}
+article p {
+  color: hsl(233, 8%, 79%);
+}
