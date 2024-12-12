@@ -1,73 +1,23 @@
-// const icons = document.querySelectorAll(".icon");
-// const answers = document.querySelectorAll(".answer");
+const plusIcon = document.querySelectorAll(".plus");
+const minusIcon = document.querySelectorAll(".minus");
 
-// icons.forEach((icon) => {
-//   icon.addEventListener("DOMContentLoaded", () => {
-//     if (answers.style.display === "none") {
-//       answers.style.display = "block";
-//     } else {
-//       answers.style.display = "none";
-//     }
-//   if (answers.style.visibility === "hidden") {
-//     answers.style.visibility = "visible";
-//   } else {
-//     answers.style.visibility = "hidden";
-//   }
-//   });
-// });
+document.querySelectorAll(".plus").forEach((question) => {
+  question.addEventListener("click", () => {
+    const answer = question.nextElementSibling;
+    const isOpen = answer.style.display === "block";
 
-// document.addEventListener("DOMContentLoaded", function () {
-// const icons = document.getElementById("icon");
-// const answers = document.getElementById("answer");
+    document
+      .querySelectorAll(".answer")
+      .forEach((ans) => (ans.style.display = "none"));
+    document
+      .querySelectorAll(".plus")
+      .forEach((icon) => (icon.textContent = "plusIcon"));
 
-// icons.forEach(icon) => {
-//   icon.addEventListener("click", ()=> {
-//     if (answers.style.display === "none") {
-//       answers.style.display = "block";
-//     } else {
-//       answers.style.display = "none";
-//     }
-
-// })};
-
-// const minusIcon = document.querySelectorAll(".minus");
-// const answers = document.querySelectorAll(".answer");
-// const plusIcon = document.querySelectorAll(".plus").forEach((answer) => {
-//   answer.addEventListener("click", () => {
-// plusIcon.replace(minusIcon);
-// const answr = answer.parentElement.nextElementSibling;
-
-// if (answr.style.display === "none") {
-//   answers.style.display = "block";
-// icon.textContent = answers;
-// }
-//  else {
-// answr.style.display = "none";
-// icon.textContent = plusIcon;
-// }
-//   });
-// });
-
-document.addEventListener("DOMContentLoaded", () => {
-  const answers = document.getElementById("answer");
-  const plusIcon = document.querySelectorAll(".plus");
-  plusIcon.forEach((icon) => {
-    icon.addEventListener("click", () => {
-      if (answers.style.display === "none") {
-        answers.style.display = "block";
-        icon.textContent = answers;
-      }
-
-      // if (answers.classList.contains("show")) {
-      //   answers.classList.remove("show");
-      //   plusIcon.textContent = "+";
-      // } else {
-      //   answers.classList.add("show");
-      //   plusIcon.textContent = "-";
-      // }
-    });
+    if (!isOpen) {
+      answer.style.display = "block";
+      question.querySelector("svg").textContent = "minusIcon";
+    }
   });
 });
-
-// console.log(icons);
-// console.log(answers);
+console.log(plusIcon);
+console.log(minusIcon);
