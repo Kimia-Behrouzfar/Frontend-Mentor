@@ -43,3 +43,6 @@
 .item:hover {
   color: #ad28eb;
 }
+.minus {
+  display: none;
+}
