@@ -1,5 +1,5 @@
-const plusIcon = document.querySelectorAll(".plus");
-const minusIcon = document.querySelectorAll(".minus");
+const plusIcon = document.querySelector(".plus");
+const minusIcon = document.querySelector(".minus");
 
 document.querySelectorAll(".plus").forEach((question) => {
   question.addEventListener("click", () => {
