@@ -4,7 +4,7 @@
   padding: 0;
 }
 header {
-  padding: 80px;
+  padding: 60px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -79,6 +79,7 @@ section p {
   margin-top: 10px;
 }
 .articles {
+  margin-left: 80px;
   margin-top: 100px;
   display: flex;
   gap: 160px;
@@ -105,8 +106,3 @@ article h3:hover {
 article p {
   color: hsl(233, 8%, 79%);
 }
-
-/* 
-@media screen {
-    
-} */
