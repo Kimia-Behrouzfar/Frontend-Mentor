@@ -42,7 +42,7 @@ header h1 {
 .side {
   position: absolute;
   top: 60px;
-  left: 68rem;
+  left: 75%;
 }
 
 .side button {
