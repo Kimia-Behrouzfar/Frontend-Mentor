@@ -51,6 +51,7 @@ header h1 {
   color: white;
   border: none;
   border-radius: 5px;
+  cursor: pointer;
 }
 
 .side {
@@ -82,14 +83,52 @@ header h1 {
   margin: 0;
 }
 .num {
-  color: red;
   padding-right: 20px;
 }
 button {
+  position: relative;
+  bottom: 35%;
   padding: 10px;
   background-color: #d84315;
   color: white;
   border: none;
   border-radius: 5px;
   width: 100%;
+  cursor: pointer;
+}
+.mark {
+  position: relative;
+  bottom: 35px;
+  left: 95%;
+}
+#plus {
+  position: relative;
+  bottom: 40%;
+  left: 100px;
+  color: white;
+  cursor: pointer;
+}
+
+#minus {
+  position: relative;
+  bottom: 40%;
+  right: 100px;
+  color: white;
+  cursor: pointer;
+}
+.cart .price,
+.item .num {
+  color: #d84315;
+}
+.item span {
+  color: darkgray;
+}
+.text {
+  background: rgb(231, 228, 228);
+  padding: 15px;
+  align-items: center;
+  border-radius: 5px;
+}
+.side h2 {
+  color: #d84315;
 }
