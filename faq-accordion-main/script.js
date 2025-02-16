@@ -1,23 +1,9 @@
-const plusIcon = document.querySelector(".plus");
-const minusIcon = document.querySelector(".minus");
-
-document.querySelectorAll(".plus").forEach((question) => {
-  question.addEventListener("click", () => {
-    const answer = question.nextElementSibling;
-    const isOpen = answer.style.display === "block";
-
-    document
-      .querySelectorAll(".answer")
-      .forEach((ans) => (ans.style.display = "none"));
-    document
-      .querySelectorAll(".plus")
-      .forEach((icon) => (icon.textContent = "plusIcon"));
-
-    if (!isOpen) {
-      answer.style.display = "block";
-      question.querySelector("svg").textContent = "minusIcon";
-    }
-  });
-});
-console.log(plusIcon);
-console.log(minusIcon);
+const iconPlus=document.querySelector('.plus');
+const answer=document.querySelector('.answer');
+iconPlus.addEventListener.iconPlus.forEach(element => {
+  
+});('click',()=>{
+  let newTag=document.createElement('div')
+  newTag.innerHTML=answer
+  console.log(newTag);
+})

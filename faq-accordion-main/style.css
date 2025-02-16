@@ -1,12 +1,15 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  /* box-sizing: border-box; */
+}
+img{
+  width: 100%;
 }
 .cart {
   position: relative;
   top: -100px;
-  left: 20%;
+  left: 30%;
   width: 35%;
   background-color: rgb(255, 255, 255);
   padding: 30px;
@@ -40,7 +43,7 @@
   display: flex;
   justify-content: space-between;
 }
-.item:hover {
+.question:hover {
   color: #ad28eb;
 }
 .minus {
@@ -48,4 +51,10 @@
 }
 .answer {
   padding: 40px;
+}
+.text{
+  visibility: visible;
+  margin-bottom: 15px;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
 }
