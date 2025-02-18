@@ -1,9 +1,8 @@
 * {
   margin: 0;
   padding: 0;
-  /* box-sizing: border-box; */
 }
-img{
+header img{
   width: 100%;
 }
 .cart {
@@ -15,46 +14,49 @@ img{
   padding: 30px;
   border-radius: 15px;
 }
-.header {
-  margin-bottom: 50px;
-  margin-left: 20px;
+.head{
   display: flex;
+ padding: 25px;
 }
-
-.header h1 {
-  /* margin-left: 20px; */
+.head h2 {
   font-size: 30px;
   font-weight: bold;
+  margin-left: 15px;
 }
-.body .head {
-  /* margin-left: 20px;
-  margin-top: 40px;
-  display: flex; */
+.item{
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
 }
-
-.body p {
+.answer{
+  display: none;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+}
+.answer p{
   color: gray;
   font-size: 15px;
 }
-.footer li {
-  font-size: 15px;
-  font-weight: bold;
-  padding: 20px;
-  display: flex;
-  justify-content: space-between;
+.plusIcon, .minusIcon {
+  cursor: pointer;
 }
-.question:hover {
-  color: #ad28eb;
+
+.plusIcon {
+  display: block;
 }
-.minus {
+
+.minusIcon {
   display: none;
 }
-.answer {
-  padding: 40px;
+
+.item.active .answer {
+  display: block;
 }
-.text{
-  visibility: visible;
-  margin-bottom: 15px;
-  padding: 10px;
-  border-bottom: 1px solid #ddd;
+
+.item.active .plusIcon {
+  display: none;
+}
+
+.item.active .minusIcon {
+  display: block;
 }
