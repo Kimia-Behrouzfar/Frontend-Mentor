@@ -66,8 +66,47 @@ main {
   width: 35rem;
   margin-right: 10rem;
 }
-.icon {
+.icon img {
+  margin-right: 30px;
   position: relative;
   top: 10rem;
   right: 10rem;
+}
+.feature {
+  visibility: hidden;
+  padding: 20px;
+  width: 10rem;
+  height: 12rem;
+  background: rgb(224, 224, 224);
+}
+.feature img {
+  width: 20px;
+  height: 20px;
+}
+.feature ul {
+  list-style: none;
+  display: block;
+}
+.feature li {
+  margin-top: 10px;
+  display: flex;
+  font-size: 20px;
+  text-align: center;
+  gap: 20px;
+}
+.company {
+  visibility: hidden;
+  padding: 20px;
+  width: 10rem;
+  height: 12rem;
+  background: rgb(224, 224, 224);
+}
+.company ul {
+  list-style: none;
+  display: block;
+}
+.company li {
+  margin-top: 10px;
+  font-size: 20px;
+  text-align: center;
 }
