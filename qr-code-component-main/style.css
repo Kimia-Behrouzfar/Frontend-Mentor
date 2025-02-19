@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  display: flex;
+  justify-content: center;
+  margin-top: 10rem;
+}
+.cart {
+  padding: 30px;
+  background: rgb(236, 236, 236);
+}
+.image img {
+  width: 20rem;
+  height: auto;
+  margin-bottom: 10px;
+}
+.text {
+  text-align: center;
+}
+.text p {
+  margin-top: 20px;
+  color: gray;
+}
