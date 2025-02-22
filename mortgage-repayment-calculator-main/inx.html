@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mortgage Calculator</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f5f8fb;
+        margin: 0;
+        padding: 0;
+      }
+
+      header {
+        text-align: center;
+        padding: 50px;
+      }
+
+      section {
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        width: 450px;
+        margin: auto;
+        padding: 20px;
+      }
+
+      label {
+        font-weight: bold;
+      }
+
+      input,
+      select {
+        width: 100%;
+        padding: 10px;
+        margin-top: 5px;
+        font-size: 14px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+
+      .button {
+        background-color: #f1c40f;
+        color: white;
+        border: none;
+        padding: 12px 20px;
+        font-size: 16px;
+        border-radius: 5px;
+        cursor: pointer;
+        display: block;
+        margin: 20px 0;
+      }
+
+      .results {
+        background-color: #34495e;
+        color: white;
+        padding: 20px;
+        margin-top: 30px;
+        border-radius: 10px;
+      }
+
+      .results h3 {
+        margin: 0;
+        font-size: 22px;
+      }
+
+      .results .amount {
+        font-size: 30px;
+        font-weight: bold;
+      }
+
+      .highlight {
+        background-color: #f39c12;
+        padding: 10px;
+        border-radius: 5px;
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h2>Mortgage Calculator</h2>
+    </header>
+
+    <section>
+      <form>
+        <p>
+          <label for="mortgageAmount">Mortgage Amount</label>
+          <input type="number" id="mortgageAmount" placeholder="£300,000" />
+        </p>
+
+        <p>
+          <label for="mortgageTerm">Mortgage Term</label>
+          <input type="number" id="mortgageTerm" placeholder="25 years" />
+        </p>
+
+        <p>
+          <label for="interestRate">Interest Rate</label>
+          <input type="number" id="interestRate" placeholder="5.25%" />
+        </p>
+
+        <p>
+          <label>Mortgage Type</label><br />
+          <input type="radio" id="repayment" name="mortgageType" checked />
+          <label for="repayment">Repayment</label><br />
+
+          <input type="radio" id="interestOnly" name="mortgageType" />
+          <label for="interestOnly">Interest Only</label>
+        </p>
+
+        <button type="button" class="button" onclick="calculateMortgage()">
+          Calculate Repayments
+        </button>
+      </form>
+
+      <section class="results" id="results" style="display: none">
+        <h3>Your monthly repayments</h3>
+        <p class="amount" id="monthlyRepayment">£0.00</p>
+
+        <p class="highlight">Total you'll repay over the term</p>
+        <p id="totalRepayable">£0.00</p>
+      </section>
+    </section>
+
+    <script>
+      function calculateMortgage() {
+        const mortgageAmount = parseFloat(
+          document.getElementById("mortgageAmount").value
+        );
+        const mortgageTerm = parseFloat(
+          document.getElementById("mortgageTerm").value
+        );
+        const interestRate = parseFloat(
+          document.getElementById("interestRate").value
+        );
+
+        // Calculation of mortgage
+        const principal = mortgageAmount;
+        const years = mortgageTerm;
+        const rate = interestRate / 100 / 12;
+        const n = years * 12;
+
+        // Mortgage repayment formula
+        const monthlyRepayment =
+          (principal * rate) / (1 - Math.pow(1 + rate, -n));
+        const totalRepayable = monthlyRepayment * n;
+
+        // Update results
+        document.getElementById(
+          "monthlyRepayment"
+        ).textContent = `£${monthlyRepayment.toFixed(2)}`;
+        document.getElementById(
+          "totalRepayable"
+        ).textContent = `£${totalRepayable.toFixed(2)}`;
+
+        // Show results
+        document.getElementById("results").style.display = "block";
+      }
+    </script>
+  </body>
+</html>
